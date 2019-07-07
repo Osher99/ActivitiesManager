@@ -1,0 +1,14 @@
+C:\Users\osher\source\repos\ServerSideProject\ServerSideProject\bin\Debug\netcoreapp2.2\ServerSideProject.deps.json
+C:\Users\osher\source\repos\ServerSideProject\ServerSideProject\bin\Debug\netcoreapp2.2\ServerSideProject.runtimeconfig.json
+C:\Users\osher\source\repos\ServerSideProject\ServerSideProject\bin\Debug\netcoreapp2.2\ServerSideProject.runtimeconfig.dev.json
+C:\Users\osher\source\repos\ServerSideProject\ServerSideProject\bin\Debug\netcoreapp2.2\ServerSideProject.dll
+C:\Users\osher\source\repos\ServerSideProject\ServerSideProject\bin\Debug\netcoreapp2.2\ServerSideProject.pdb
+C:\Users\osher\source\repos\ServerSideProject\ServerSideProject\obj\Debug\netcoreapp2.2\ServerSideProject.csprojAssemblyReference.cache
+C:\Users\osher\source\repos\ServerSideProject\ServerSideProject\obj\Debug\netcoreapp2.2\ServerSideProject.csproj.CoreCompileInputs.cache
+C:\Users\osher\source\repos\ServerSideProject\ServerSideProject\obj\Debug\netcoreapp2.2\ServerSideProject.RazorAssemblyInfo.cache
+C:\Users\osher\source\repos\ServerSideProject\ServerSideProject\obj\Debug\netcoreapp2.2\ServerSideProject.RazorAssemblyInfo.cs
+C:\Users\osher\source\repos\ServerSideProject\ServerSideProject\obj\Debug\netcoreapp2.2\ServerSideProject.AssemblyInfoInputs.cache
+C:\Users\osher\source\repos\ServerSideProject\ServerSideProject\obj\Debug\netcoreapp2.2\ServerSideProject.AssemblyInfo.cs
+C:\Users\osher\source\repos\ServerSideProject\ServerSideProject\obj\Debug\netcoreapp2.2\ServerSideProject.RazorTargetAssemblyInfo.cache
+C:\Users\osher\source\repos\ServerSideProject\ServerSideProject\obj\Debug\netcoreapp2.2\ServerSideProject.dll
+C:\Users\osher\source\repos\ServerSideProject\ServerSideProject\obj\Debug\netcoreapp2.2\ServerSideProject.pdb
