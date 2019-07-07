@@ -1,0 +1,36 @@
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand text-white" routerLink="/home">Activity Managment Studio</a>
+  <ul class="nav justify-content-center mr-auto"> 
+    <li class="nav-item"> 
+      <a class="nav-link" routerLink="/addactivity">Add Activity</a>
+    </li>
+    <li class="nav-item"> 
+    <a class="nav-link" routerLink="/allactivities">All Activities</a>
+  </li>
+  </ul>
+  <a class="navbar-brand text-white"  *ngIf="userDetails">Welcome {{ userDetails.name }}  </a>
+  <button class="btn btn-danger my-2 my-sm-0" (click)="onLogout()">Log out</button>
+</nav>
+<div  style="width: 30rem; justify-content: right; align-items: right;" *ngIf="userDetails"> 
+  <ul class="list-group" style="justify-content: center"> 
+    <li class="list-group-item">  
+      <strong>Email: </strong>
+      {{ userDetails.email }}
+    </li>
+    <li class="list-group-item">  
+      <strong>Full name: </strong>
+      {{ userDetails.name }}
+    </li>
+    <li class="list-group-item">  
+      <strong>Class: </strong>
+      {{ userDetails.class }}
+    </li>
+    <li class="list-group-item">  
+      <strong>Registered Activities: </strong>
+      <tr *ngFor="let activity of activities">
+          <td>Activity ID: {{activity.activityId}}</td>
+        <td>{{activity.activityName}}</td>
+        </tr>
+    </li>
+  </ul> 
+<router-outlet></router-outlet>

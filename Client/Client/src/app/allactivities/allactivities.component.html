@@ -1,0 +1,19 @@
+<hr>
+<div class="row">
+<button class="btn btn-lg btn-block" (click)="goHome()">Go to Home page</button>
+<hr>
+<button class="btn btn-lg btn-block" (click)="goAddActivities()">Go to Add Activities page</button>
+</div>
+<div class="card" style="width: 25rem; text-align: center; color: black" *ngFor="let activty of activties">
+  <div class="card-body">
+    <h2 class="card-title" style="font-weight: bold; color: black">{{ activty.activityName }}</h2>
+    <p class="card-text">{{ activty.description }}</p>
+    <p>Maximum Attenders: {{ activty.maximumAttenders}}</p>
+    <p>registered students: {{ activty.attenders}}</p>
+    <hr>
+    <button class="btn btn-primary" (click)="onAttend(activty.id, activty.activityName, activty.attenders, activty.maximumAttenders)">Attend Activity</button>
+<hr>
+  </div>
+
+    <hr>
+    </div>  

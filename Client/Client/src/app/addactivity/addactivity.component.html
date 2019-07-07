@@ -1,0 +1,34 @@
+<hr>
+<div class="row">
+<button class="btn btn-lg btn-block" (click)="goHome()">Go to Home page</button>
+<hr>
+<button class="btn btn-lg btn-block" (click)="goAllActivities()">Go to All Activities page</button>
+</div><br/>
+<div class="container">
+  <form [formGroup]="service.formModel" autocomplete="off" (submit)="onSubmit()">
+    <div  style="text-align: center;" class="form-group required" >  
+        <label style=" color: black!important;">Activity Name:</label>
+      <input class="form-control" formControlName="ActivityName" style="text-align: center;" maxlength="25">
+      <label class="text-danger" *ngIf="service.formModel.get('ActivityName').touched &&
+      service.formModel.get('ActivityName').errors?.required">Activity Name is required!</label>
+    </div>
+    <div  style="text-align: center" class="form-group required">  
+        <label style=" color: black;">Activity Description:</label>
+        <textarea class="form-control" formControlName="Description" rows="3" style="text-align: center; border: 1px solid;"></textarea>
+        <label class="text-danger" *ngIf="service.formModel.get('Description').touched &&
+        service.formModel.get('Description').errors?.required">Description is required!</label>
+      </div>
+      <div  style="text-align: center" class="form-group">  
+        <label style=" color: black;">Maximum attenders:</label>          
+        <input class="form-control" formControlName="AttendersNum" style="text-align: center;" maxlength="25">
+        <label class="text-danger" *ngIf="service.formModel.get('AttendersNum').touched &&
+        service.formModel.get('AttendersNum').errors?.required">Attenders Maximum Number is required!</label>
+            </div>
+          <div class="form-row">
+            <div class="form-group col-md-8 offset-md-2"> 
+              <button type="submit" class="btn btn-lg btn-block" [disabled]="!service.formModel.valid">Add new Activity</button>
+
+            </div>
+          </div>
+  </form>
+</div>
